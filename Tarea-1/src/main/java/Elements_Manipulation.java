@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 @Test
-public class MyTest {
-	public void demo() throws InterruptedException {
+public class Elements_Manipulation {
+	public void Elements_Manipulation_demo() throws InterruptedException {
 		
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://testsheepnz.github.io/BasicCalculator.html");
@@ -34,6 +34,5 @@ public class MyTest {
 		
 		WebElement CalculateBTN = driver.findElement(By.id("calculateButton"));
 		CalculateBTN.click();
-		
 	}
 }
