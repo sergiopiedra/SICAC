@@ -96,7 +96,7 @@ public class AffiliatePFPage {
 		WebElement BtnNext = driver.findElement(byBtnNext);
 		BtnNext.click();
 		
-		WebDriverWait loadwaitPU = new WebDriverWait(driver, 5);
+		WebDriverWait loadwaitPU = new WebDriverWait(driver, 10);
 		loadwaitPU.until(ExpectedConditions.presenceOfElementLocated(byBtnProductiveUnit));
 		
 		WebElement BtnProductiveUnit = driver.findElement(byBtnProductiveUnit);

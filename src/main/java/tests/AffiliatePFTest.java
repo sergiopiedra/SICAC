@@ -11,7 +11,6 @@ public class AffiliatePFTest {
 	@Test
 	public void testAffiliatePF() throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
-		//driver.get("http://165.232.130.15/");
 		driver.get("http://165.232.130.15/formulariopersona/create");
 		
 		String id = "202220222";
