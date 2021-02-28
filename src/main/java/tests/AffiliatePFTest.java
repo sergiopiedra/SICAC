@@ -1,10 +1,11 @@
 package tests;
 
 import org.testng.annotations.Test;
+
+import pages.AffiliatePFPage;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import Pages.AffiliatePFPage;
 
 public class AffiliatePFTest {
 
@@ -12,6 +13,7 @@ public class AffiliatePFTest {
 	public void testAffiliatePF() throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://165.232.130.15/formulariopersona/create");
+		driver.manage().window().fullscreen();
 		
 		String id = "202220222";
 		String name = "Jose";
