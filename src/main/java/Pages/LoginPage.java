@@ -1,35 +1,38 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-	
-	By byBtnIngresar = By.xpath("/html/body/header/div[2]/div[1]/div/div[2]/div[2]/a");
-	By byEmail = By.id("email");
-	By byPass = By.id("password");
-	By byBtnIniciar = By.xpath("//*[@id=\"app\"]/main/div/div/div/form/div[3]/button");
-	
+public class LoginPage extends BasePage {
+
+	@FindBy(xpath = "/html/body/header/div[2]/div[1]/div/div[2]/div[2]/a")
+	WebElement BtnIngresar;
+
+	@FindBy(id = "email")
+	WebElement TextEmail;
+
+	@FindBy(id = "password")
+	WebElement TextPass;
+
+	@FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/form/div[3]/button")
+	WebElement BtnIniciar;
+
 	WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
-		this.driver = driver;
+		super(driver);
+		PageFactory.initElements(driver, this);
 	}
-	
+
 	public void doLogin(String email, String pwd) {
-		
-		WebElement btnIngresar = driver.findElement(byBtnIngresar);
-		btnIngresar.click();
-		
-		WebElement emailField = driver.findElement(byEmail);
-		emailField.sendKeys(email);
-		
-		WebElement passwordField = driver.findElement(byPass);
-		passwordField.sendKeys(pwd);
-		
-		WebElement btnIniciar = driver.findElement(byBtnIniciar);
-		btnIniciar.click();
+
+		clickOnElement(BtnIngresar);
+		typeOnElement(TextEmail, email);
+		typeOnElement(TextPass, pwd);
+		clickOnElement(BtnIniciar);
+
 	}
 
 }
