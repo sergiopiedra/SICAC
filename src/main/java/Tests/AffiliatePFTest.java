@@ -1,10 +1,19 @@
 package Tests;
 
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Pages.AffiliatePFPage;
 
 public class AffiliatePFTest extends BaseTest {
+
+	@BeforeMethod
+	public void setup() {
+		driver = new ChromeDriver();
+		driver.get("http://165.232.130.15/formulariopersona/create");
+		driver.manage().window().fullscreen();
+	}
 
 	@Test
 	public void testAffiliatePF() throws InterruptedException {

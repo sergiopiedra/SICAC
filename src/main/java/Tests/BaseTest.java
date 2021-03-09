@@ -14,7 +14,7 @@ public class BaseTest {
 	public void setup() {
 		driver = new ChromeDriver();
 		driver.get("http://165.232.130.15/");
-		driver.manage().window().maximize();
+		driver.manage().window().fullscreen();
 	}
 
 	@AfterMethod

@@ -4,8 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
 
 public class LoginPage extends BasePage {
 
@@ -20,8 +18,6 @@ public class LoginPage extends BasePage {
 
 	@FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/form/div[3]/button")
 	WebElement BtnIniciar;
-
-	WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
 		super(driver);
