@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.AffiliatePFTest">
+      <class name="Tests.LoginTest">
         <methods>
+          <include name="testLogin"/>
           <include name="setup"/>
           <include name="closeApplication"/>
-          <include name="testAffiliatePF"/>
+          <include name="verifyHomePage"/>
         </methods>
-      </class> <!-- Tests.AffiliatePFTest -->
+      </class> <!-- Tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

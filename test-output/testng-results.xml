@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[-Browser Session End-]]>
     </line>
+    <line>
+      <![CDATA[-Browser Session End-]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-03-09T09:22:26 CST" name="Default suite" finished-at="2021-03-09T09:22:47 CST" duration-ms="21396">
+  <suite started-at="2021-03-10T20:38:36 CST" name="MyTesting" finished-at="2021-03-10T20:39:07 CST" duration-ms="30997">
     <groups>
     </groups>
-    <test started-at="2021-03-09T09:22:26 CST" name="Default test" finished-at="2021-03-09T09:22:47 CST" duration-ms="21396">
+    <test started-at="2021-03-10T20:38:36 CST" name="Testing" finished-at="2021-03-10T20:39:07 CST" duration-ms="30997">
       <class name="Tests.AffiliatePFTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.AffiliatePFTest@3e6ef8ad]" started-at="2021-03-09T09:22:26 CST" name="setup" finished-at="2021-03-09T09:22:33 CST" duration-ms="7330" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.AffiliatePFTest@747edf66]" started-at="2021-03-10T20:38:36 CST" name="setup" finished-at="2021-03-10T20:38:42 CST" duration-ms="5559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testAffiliatePF()[pri:0, instance:Tests.AffiliatePFTest@3e6ef8ad]" started-at="2021-03-09T09:22:33 CST" name="testAffiliatePF" finished-at="2021-03-09T09:22:47 CST" duration-ms="13320" status="PASS">
+        <test-method is-config="true" signature="verifyHomePage()[pri:0, instance:Tests.AffiliatePFTest@747edf66]" started-at="2021-03-10T20:38:42 CST" name="verifyHomePage" finished-at="2021-03-10T20:38:42 CST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method signature="testAffiliatePF()[pri:0, instance:Tests.AffiliatePFTest@747edf66]" started-at="2021-03-10T20:38:42 CST" name="testAffiliatePF" finished-at="2021-03-10T20:38:52 CST" duration-ms="10051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAffiliatePF -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:Tests.AffiliatePFTest@3e6ef8ad]" started-at="2021-03-09T09:22:47 CST" name="closeApplication" finished-at="2021-03-09T09:22:47 CST" duration-ms="705" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:Tests.AffiliatePFTest@747edf66]" started-at="2021-03-10T20:38:52 CST" name="closeApplication" finished-at="2021-03-10T20:38:53 CST" duration-ms="1168" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[-Browser Session End-]]>
@@ -26,6 +33,27 @@
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- Tests.AffiliatePFTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.LoginTest@3d1cfad4]" started-at="2021-03-10T20:38:53 CST" name="setup" finished-at="2021-03-10T20:39:03 CST" duration-ms="9413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="verifyHomePage()[pri:0, instance:Tests.LoginTest@3d1cfad4]" started-at="2021-03-10T20:39:03 CST" name="verifyHomePage" finished-at="2021-03-10T20:39:03 CST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method signature="testLogin()[pri:0, instance:Tests.LoginTest@3d1cfad4]" started-at="2021-03-10T20:39:03 CST" name="testLogin" finished-at="2021-03-10T20:39:06 CST" duration-ms="3798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:Tests.LoginTest@3d1cfad4]" started-at="2021-03-10T20:39:06 CST" name="closeApplication" finished-at="2021-03-10T20:39:07 CST" duration-ms="907" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[-Browser Session End-]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- Tests.LoginTest -->
+    </test> <!-- Testing -->
+  </suite> <!-- MyTesting -->
 </testng-results>

@@ -36,4 +36,19 @@ public class BasePage {
 		alert.accept();
 		driver.switchTo().defaultContent();
 	}
+
+	public String getPageTitle() {
+		String title = driver.getTitle();
+		return title;
+	}
+
+	public boolean verifyBasePageTitle() {
+		String expectedPageTitle = "Centro Agrícola Cantonal de Nandayure";
+		return getPageTitle().contains(expectedPageTitle);
+	}
+	
+	public boolean verifyAffiliatePFTitle() {
+		String expectedPageTitle = "Solicitud-CAC";
+		return getPageTitle().contains(expectedPageTitle);
+	}
 }

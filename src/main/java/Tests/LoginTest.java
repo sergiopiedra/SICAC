@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import Pages.LoginPage;
 
-public class LoginTest extends BaseTest{
+public class LoginTest extends BaseTest {
 
 	@Test
 	public void testLogin() throws InterruptedException {

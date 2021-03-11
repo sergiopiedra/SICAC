@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class AffiliatePFPage extends BasePage {
-
+	
 	@FindBy(xpath = "/html/body/div/div[3]/div[3]/div[2]/div/form/div[1]/div/div[3]/div[1]/div[1]/div[1]/div")
 	WebElement btnIdType;
 
@@ -74,7 +74,7 @@ public class AffiliatePFPage extends BasePage {
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
-
+	
 	public void doAffiliatePF(String id, String name, String lName1, String lName2, String dateOfBirth,
 			String phoneNumber, String mail, String address, String productName) throws InterruptedException {
 
