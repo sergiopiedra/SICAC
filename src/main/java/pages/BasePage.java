@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NotFoundException;
@@ -46,7 +46,7 @@ public class BasePage {
 		String expectedPageTitle = "Centro Agrícola Cantonal de Nandayure";
 		return getPageTitle().contains(expectedPageTitle);
 	}
-	
+
 	public boolean verifyAffiliatePFTitle() {
 		String expectedPageTitle = "Solicitud-CAC";
 		return getPageTitle().contains(expectedPageTitle);

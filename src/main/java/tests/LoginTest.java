@@ -1,8 +1,8 @@
-package Tests;
+package tests;
 
 import org.testng.annotations.Test;
 
-import Pages.LoginPage;
+import pages.LoginPage;
 
 public class LoginTest extends BaseTest {
 
