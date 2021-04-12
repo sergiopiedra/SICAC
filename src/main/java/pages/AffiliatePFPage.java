@@ -55,7 +55,7 @@ public class AffiliatePFPage extends BasePage {
 	@FindBy(id = "pe_direccion")
 	WebElement textAddress;
 
-	@FindBy(xpath = "/html/body/div/div[2]/div[3]/div[2]/div/form/div[1]/div/div[4]/div/ul/li/span")
+	@FindBy(xpath = "//*[@id=\"btnsiguiente\"]")
 	WebElement btnNext;
 
 	@FindBy(xpath = "/html/body/div/div[2]/div[3]/div[2]/div/form/div[2]/div/div[3]/div/div[1]/div[1]/div/select")
@@ -67,7 +67,7 @@ public class AffiliatePFPage extends BasePage {
 	@FindBy(id = "prod_nombre_pe")
 	WebElement textProductName;
 
-	@FindBy(xpath = "//*[@id=\"submit-form\"]")
+	@FindBy(xpath = "//*[@id=\"btnenviar\"]")
 	WebElement btnSubmit;
 
 	public AffiliatePFPage(WebDriver driver) {
@@ -99,7 +99,6 @@ public class AffiliatePFPage extends BasePage {
 		clickOnElement(productiveUnit);
 		typeOnElement(textProductName, productName);
 		clickOnElement(btnSubmit);
-		acceptAlert();
 
 	}
 }
