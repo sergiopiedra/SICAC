@@ -1,1 +1,1 @@
-# SICAC
+# SICAC Project: Software test automation
