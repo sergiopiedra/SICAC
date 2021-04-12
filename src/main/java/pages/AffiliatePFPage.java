@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AffiliatePFPage extends BasePage {
 
-	@FindBy(xpath = "/html/body/div/div[2]/div[3]/div[2]/div/form/div[1]/div/div[3]/div[1]/div[1]/div[1]/div/select")
+	@FindBy(xpath = "//*[@id=\"tipo_ide\"]")
 	WebElement btnIdType;
 
-	@FindBy(xpath = "/html/body/div/div[2]/div[3]/div[2]/div/form/div[1]/div/div[3]/div[1]/div[1]/div[1]/div/select/option[2]")
+	@FindBy(xpath = "//*[@id=\"tipo_ide\"]/option[2]")
 	WebElement idType;
 
 	@FindBy(id = "pe_identificacion")
@@ -25,10 +25,10 @@ public class AffiliatePFPage extends BasePage {
 	@FindBy(id = "pe_apellido2")
 	WebElement textLastName2;
 
-	@FindBy(xpath = "/html/body/div/div[2]/div[3]/div[2]/div/form/div[1]/div/div[3]/div[1]/div[3]/div[1]/div/select")
+	@FindBy(xpath = "//*[@id=\"pe_s\"]")
 	WebElement btnGender;
 
-	@FindBy(xpath = "/html/body/div/div[2]/div[3]/div[2]/div/form/div[1]/div/div[3]/div[1]/div[3]/div[1]/div/select/option[3]")
+	@FindBy(xpath = "//*[@id=\"pe_s\"]/option[3]")
 	WebElement genderType;
 
 	@FindBy(id = "pe_fecha_nacimiento")
@@ -58,10 +58,10 @@ public class AffiliatePFPage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"btnsiguiente\"]")
 	WebElement btnNext;
 
-	@FindBy(xpath = "/html/body/div/div[2]/div[3]/div[2]/div/form/div[2]/div/div[3]/div/div[1]/div[1]/div/select")
+	@FindBy(xpath = "//*[@id=\"select_unidadp\"]")
 	WebElement btnProductiveUnit;
 
-	@FindBy(xpath = "/html/body/div/div[2]/div[3]/div[2]/div/form/div[2]/div/div[3]/div/div[1]/div[1]/div/select/option[2]")
+	@FindBy(xpath = "//*[@id=\"select_unidadp\"]/option[3]")
 	WebElement productiveUnit;
 
 	@FindBy(id = "prod_nombre_pe")
