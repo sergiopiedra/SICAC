@@ -46,13 +46,13 @@ public class AffiliatePJPage extends BasePage {
 	@FindBy(id = "prod_nombre_em")
 	WebElement textProductName;
 
-	@FindBy(id = "prod_nombre_em")
+	@FindBy(id = "prod_numero_finca_Em")
 	WebElement textFieldNum;
 
 	@FindBy(id = "prod_numero_plano_Em")
 	WebElement textArchitectsNum;
 
-	@FindBy(xpath = "//*[@id=\"btnenviar\"]")
+	@FindBy(xpath = "//*[@id=\"btnenviarnone\"]")
 	WebElement btnSubmit;
 
 	public AffiliatePJPage(WebDriver driver) {
@@ -71,7 +71,7 @@ public class AffiliatePJPage extends BasePage {
 		clickOnElement(optCanton);
 		clickOnElement(btnDistrict);
 		clickOnElement(optDistrict);
-		typeOnElement(textAddress, address); 
+		typeOnElement(textAddress, address);
 		clickOnElement(btnNext);
 		clickOnElement(btnProductiveUnit);
 		clickOnElement(productiveUnit);
