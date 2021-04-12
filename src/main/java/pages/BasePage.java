@@ -51,4 +51,9 @@ public class BasePage {
 		String expectedPageTitle = "Solicitud-CAC";
 		return getPageTitle().contains(expectedPageTitle);
 	}
+
+	public boolean verifyAffiliatePJTitle() {
+		String expectedPageTitle = "Solicitud-CAC";
+		return getPageTitle().contains(expectedPageTitle);
+	}
 }

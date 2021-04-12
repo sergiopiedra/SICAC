@@ -22,7 +22,7 @@ public class AffiliatePFTest extends BaseTest {
 	public void verifyHomePage() {
 		System.out.println("Page verify test");
 		BasePage basePage = new BasePage(driver);
-		Assert.assertTrue(basePage.verifyAffiliatePFTitle(), "Page title doesn't match");
+		Assert.assertTrue(basePage.verifyAffiliatePJTitle(), "Page title doesn't match");
 	}
 
 	@Test
