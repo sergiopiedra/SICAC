@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import pages.AffiliatePJPage;
 import pages.BasePage;
 
+
 public class AffiliatePJTest extends BaseTest {
 
 	@BeforeClass

@@ -1,5 +1,6 @@
 package tests;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -12,7 +13,7 @@ import pages.BasePage;
 
 public class BaseTest {
 
-	protected WebDriver driver;
+	static WebDriver driver;
 
 	@BeforeClass
 	public void setup() {

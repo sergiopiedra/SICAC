@@ -18,6 +18,9 @@ public class LoginPage extends BasePage {
 
 	@FindBy(xpath = "//*[@id=\"app\"]/main/div/div/div/form/div[3]/button")
 	WebElement BtnIniciar;
+	
+	@FindBy(xpath = "//*[@id=\"navbarDropdown\"]")
+	WebElement BtnUserName;
 
 	public LoginPage(WebDriver driver) {
 		super(driver);
@@ -30,5 +33,6 @@ public class LoginPage extends BasePage {
 		typeOnElement(TextEmail, email);
 		typeOnElement(TextPass, pwd);
 		clickOnElement(BtnIniciar);
+		clickOnElement(BtnUserName);
 	}
 }
